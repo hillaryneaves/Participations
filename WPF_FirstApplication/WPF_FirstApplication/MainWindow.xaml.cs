@@ -23,6 +23,26 @@ namespace WPF_FirstApplication
         public MainWindow()
         {
             InitializeComponent();
+
+            lblMessage.Content = string.Empty;
+            txtFavoriteNumber.Clear();
+        }
+
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Thanks for clicking me!", "Clicked", MessageBoxButton.YesNo, MessageBoxImage.Exclamation);
+            lblMessage.Content = "Hello World!";
+
+            string answer = txtFavoriteNumber.Text;
+            double result = Convert.ToDouble(answer);
+
+            lblOutput.Content = $"Your favorite number multipled by five is: {(result * 5).ToString("N2")}!";
+        }
+
+        private void btnDontClick(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Hahah you clicked me!");
+            Environment.Exit(0);
         }
     }
 }
