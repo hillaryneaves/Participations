@@ -1,0 +1,32 @@
+﻿<Window x:Class="Classes3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Classes3"
+        mc:Ignorable="d"
+        Title="Student Information" Height="450" Width="800">
+    <Grid Background="#FFD0F7F1">
+        <Label x:Name="lblTitle" Content="Student Information" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top" FontFamily="Broadway" FontSize="48"/>
+        <Label x:Name="lblFirst" Content="First Name:" HorizontalAlignment="Left" Margin="47,119,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label x:Name="lblLast" Content="Last Name:" HorizontalAlignment="Left" Margin="48,142,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label x:Name="lblMajor" Content="Major:" HorizontalAlignment="Left" Margin="48,165,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label x:Name="lblGPA" Content="Cumulative GPA:" HorizontalAlignment="Left" Margin="47,187,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label x:Name="lblStreetNum" Content="Street Number:" HorizontalAlignment="Left" Margin="47,211,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label x:Name="lblStreetName" Content="Street Name:" HorizontalAlignment="Left" Margin="47,235,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label x:Name="lblCity" Content="City:" HorizontalAlignment="Left" Margin="47,257,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Label x:Name="lblState" Content="State:" HorizontalAlignment="Left" Margin="47,278,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" RenderTransformOrigin="-2.634,4.275"/>
+        <Label x:Name="lblZip" Content="ZipCode:" HorizontalAlignment="Left" Margin="47,302,0,0" VerticalAlignment="Top" FontFamily="Times New Roman"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="114,347,0,0" VerticalAlignment="Top" Height="28" Width="134" FontFamily="Times New Roman" FontSize="20" Background="#FFF9F1F1" Click="btnSubmit_Click" IsDefault="True"/>
+        <TextBox x:Name="txtFirst" HorizontalAlignment="Left" Margin="116,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtLast" HorizontalAlignment="Left" Margin="116,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtMajor" HorizontalAlignment="Left" Margin="98,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtGPA" HorizontalAlignment="Left" Margin="147,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtStreetNum" HorizontalAlignment="Left" Margin="136,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtStreetName" HorizontalAlignment="Left" Margin="124,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCity" HorizontalAlignment="Left" Margin="85,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtState" HorizontalAlignment="Left" Margin="87,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtZip" HorizontalAlignment="Left" Margin="105,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="lstGrads" Margin="367,126,37,22" SelectionChanged="lstGrads_SelectionChanged"/>
+    </Grid>
+</Window>
