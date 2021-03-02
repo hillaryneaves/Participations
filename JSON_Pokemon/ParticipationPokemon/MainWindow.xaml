@@ -1,0 +1,16 @@
+﻿<Window x:Class="ParticipationPokemon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParticipationPokemon"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="457" Width="800">
+    <Grid Margin="0,0,0,252">
+        <Grid.Background>
+            <ImageBrush ImageSource="https://cdn.europosters.eu/image/750/pokemon-logo-and-pikachu-i59768.jpg"/>
+        </Grid.Background>
+        <ListBox x:Name="lstName" Margin="-1,192,1,-245"/>
+
+    </Grid>
+</Window>
