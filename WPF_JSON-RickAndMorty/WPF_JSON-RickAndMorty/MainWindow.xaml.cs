@@ -41,10 +41,26 @@ namespace WPF_JSON_RickAndMorty
             }
         }
 
-        private void lstCharacters_SelectionChanged(object sender, SelectedCellsChangedEventArgs e)
+        //private void lstCharacters_SelectionChanged(object sender, SelectedCellsChangedEventArgs e)
+        //{
+        //    var selectedCharacter = (Character)lstCharacters.SelectedItem;
+        //    //imgCharacter.Source = new BitmapImage(new Uri(selectedCharacter.image));
+
+        //    SecondWindow newWindow = new SecondWindow();
+        //    newWindow.imgSecondWindow.Source = new BitmapImage(new Uri(selectedCharacter.image));
+
+        //    newWindow.ShowDialog();
+        //}
+
+        private void lstCharacters_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
             var selectedCharacter = (Character)lstCharacters.SelectedItem;
-            imgCharacter.Source = new BitmapImage(new Uri(selectedCharacter.image));
+            //imgCharacter.Source = new BitmapImage(new Uri(selectedCharacter.image));
+
+            SecondWindow newWindow = new SecondWindow();
+            newWindow.imgSecondWindow.Source = new BitmapImage(new Uri(selectedCharacter.image));
+
+            newWindow.ShowDialog();
         }
     }
 }

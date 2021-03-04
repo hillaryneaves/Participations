@@ -10,8 +10,8 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://pittnews.com/wp-content/uploads/2020/05/Image-from-iOS-1-900x694.png"/>
         </Grid.Background>
-        <ListBox x:Name="lstCharacters" Margin="10,199,445,-251"/>
-        <Image x:Name="imgCharacter" HorizontalAlignment="Left" Height="231" Margin="341,10,0,0" VerticalAlignment="Top" Width="431"/>
+        <ListBox x:Name="lstCharacters" Margin="10,199,445,-251" SelectionChanged="lstCharacters_SelectionChanged_1"/>
+        <Image x:Name="imgCharacter" HorizontalAlignment="Left" Height="190" Margin="532,218,0,0" VerticalAlignment="Top" Width="218"/>
 
     </Grid>
 </Window>
