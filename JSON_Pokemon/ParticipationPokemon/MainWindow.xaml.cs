@@ -42,5 +42,66 @@ namespace ParticipationPokemon
                 lstName.Items.Add(item);
             }
         }
+
+        private void lstName_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var selectedCharacter = (ResultObject)lstName.SelectedItem;
+            //imgCharacters.Source = new BitmapImage(new Uri(selectedCharacter.image));
+
+            string url = selectedCharacter.url;
+
+            URL api;
+            
+
+            using (var client = new HttpClient())
+            {
+                string json = client.GetStringAsync(url).Result;
+
+                api = JsonConvert.DeserializeObject<URL>(json);
+
+            }
+
+            lblHeight.Content = $"Height: {api.height}";
+            lblWeight.Content = $"Weight: {api.weight}";
+
+            string picturePoke = api.sprites.front_default;
+
+            imgCharacters.Source = new BitmapImage(new Uri(picturePoke));
+        }
+
+        bool PictureAtFront = true;
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedCharacter = (ResultObject)lstName.SelectedItem;
+            //imgCharacters.Source = new BitmapImage(new Uri(selectedCharacter.image));
+
+            string url = selectedCharacter.url;
+
+            URL api;
+
+
+            using (var client = new HttpClient())
+            {
+                string json = client.GetStringAsync(url).Result;
+
+                api = JsonConvert.DeserializeObject<URL>(json);
+
+            }
+
+            string picturePoke = api.sprites.front_default;
+            string picturePokes = api.sprites.back_default;
+
+            if(PictureAtFront == true)
+            {
+                imgCharacters.Source = new BitmapImage(new Uri(picturePokes));
+                PictureAtFront = false;
+            }
+            else if (PictureAtFront == false)
+            {
+                imgCharacters.Source = new BitmapImage(new Uri(picturePoke));
+                PictureAtFront = true;
+            }
+
+        }
     }
 }

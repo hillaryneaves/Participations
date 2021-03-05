@@ -6,11 +6,13 @@
         xmlns:local="clr-namespace:ParticipationPokemon"
         mc:Ignorable="d"
         Title="MainWindow" Height="457" Width="800">
-    <Grid Margin="0,0,0,252">
-        <Grid.Background>
-            <ImageBrush ImageSource="https://cdn.europosters.eu/image/750/pokemon-logo-and-pikachu-i59768.jpg"/>
-        </Grid.Background>
-        <ListBox x:Name="lstName" Margin="-1,192,1,-245"/>
+    <Grid Margin="0,0,0,-6" Background="#FFE7CBF9">
+
+        <ListBox x:Name="lstName" Margin="0,0,448,10" SelectionChanged="lstName_SelectionChanged"/>
+        <Image x:Name="imgCharacters" HorizontalAlignment="Left" Height="196" Margin="452,152,0,0" VerticalAlignment="Top" Width="214"/>
+        <Label x:Name="lblHeight" Content="" HorizontalAlignment="Left" Margin="372,42,0,0" VerticalAlignment="Top" Width="159" Height="32"/>
+        <Label x:Name="lblWeight" Content="" HorizontalAlignment="Left" Margin="372,100,0,0" VerticalAlignment="Top" Width="159" Height="29"/>
+        <Button x:Name="btnSubmit" Content="Flip Image!" HorizontalAlignment="Left" Height="35" Margin="512,364,0,0" VerticalAlignment="Top" Width="103" Click="btnSubmit_Click"/>
 
     </Grid>
 </Window>
