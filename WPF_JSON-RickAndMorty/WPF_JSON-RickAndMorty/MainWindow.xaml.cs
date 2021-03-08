@@ -28,15 +28,35 @@ namespace WPF_JSON_RickAndMorty
 
             //https://rickandmortyapi.com/api/character
 
+            RickAndMortyAPI rickandmortyAPI;
+            string data;
+
             using (var client = new HttpClient())
             {
                 string jsonData = client.GetStringAsync("https://rickandmortyapi.com/api/character").Result;
 
-                RickAndMortyAPI api = JsonConvert.DeserializeObject<RickAndMortyAPI>(jsonData);
+                rickandmortyAPI = JsonConvert.DeserializeObject<RickAndMortyAPI>(jsonData);
 
-                foreach (var character in api.results)
+                foreach (var character in rickandmortyAPI.results)
                 {
                     lstCharacters.Items.Add(character);
+                }
+            }
+
+            for (int i = 0; i < rickandmortyAPI.ToString().Length; i++)
+            {
+                if (rickandmortyAPI.info.next != null)
+                {
+                    using (var client = new HttpClient())
+                    {
+                        data = client.GetStringAsync(rickandmortyAPI.info.next).Result;
+                        rickandmortyAPI = JsonConvert.DeserializeObject<RickAndMortyAPI>(data);
+
+                        foreach (var item in rickandmortyAPI.results.ToList())
+                        {
+                            lstCharacters.Items.Add(item);
+                        }
+                    }
                 }
             }
         }
