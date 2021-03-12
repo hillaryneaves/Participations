@@ -1,0 +1,19 @@
+﻿<Window x:Class="ChuckNorris_Participation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChuckNorris_Participation"
+        mc:Ignorable="d"
+        Title="Chuck Norris Joke" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c506e043-a56d-478d-812c-3b69d71d7746/d3fz3g3-023443bd-daee-4599-ac10-7d5f7fe6ab97.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYzUwNmUwNDMtYTU2ZC00NzhkLTgxMmMtM2I2OWQ3MWQ3NzQ2XC9kM2Z6M2czLTAyMzQ0M2JkLWRhZWUtNDU5OS1hYzEwLTdkNWY3ZmU2YWI5Ny5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.iHHrw-pcGnsjmuQuhtZkPiLKO-3xDkdDhi-hclclDGE"/>
+        </Grid.Background>
+        <ListBox x:Name="lstQuote" Margin="0,314,0,0"/>
+        <Button x:Name="btnGenerate" Content="Gerenate Joke!" HorizontalAlignment="Left" Margin="634,277,0,0" VerticalAlignment="Top" Height="32" Width="156" FontFamily="Jokerman" FontSize="16" Click="btnGenerate_Click"/>
+        <ComboBox x:Name="CMBCategories" HorizontalAlignment="Left" Margin="644,153,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblLabel" Content="Select your category!" HorizontalAlignment="Left" Margin="634,119,0,0" VerticalAlignment="Top" FontSize="14"/>
+
+    </Grid>
+</Window>
