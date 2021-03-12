@@ -28,14 +28,14 @@ namespace GameOfThrones_Participation
             InitializeComponent();
 
             //SecondWindow gotQuote;
-            string url = "https://got-quotes.herokuapp.com/quotes";
+            //string url = "https://got-quotes.herokuapp.com/quotes";
 
-            using (var client = new HttpClient())
-            {
-                string json = client.GetStringAsync(url).Result;
+            //using (var client = new HttpClient())
+            //{
+            //    string json = client.GetStringAsync(url).Result;
 
-                gotQuote = JsonConvert.DeserializeObject<GOTResult>(json);
-            }
+            //    gotQuote = JsonConvert.DeserializeObject<GOTResult>(json);
+            //}
 
             //foreach (ResultObject quote in gotQuote.results.OrderBy(x => x.quote).ToList())
             //{
@@ -45,6 +45,15 @@ namespace GameOfThrones_Participation
 
         private void btnGenerate_Click(object sender, RoutedEventArgs e)
         {
+            string url = "https://got-quotes.herokuapp.com/quotes";
+
+            using (var client = new HttpClient())
+            {
+                string json = client.GetStringAsync(url).Result;
+
+                gotQuote = JsonConvert.DeserializeObject<GOTResult>(json);
+            }
+
             lstQuote.Items.Add(gotQuote);
         }
     }
