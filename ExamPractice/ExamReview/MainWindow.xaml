@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExamReview"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Exam Practice WPF" Height="450" Width="800">
+    <Grid Background="#FFECABDD">
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="637,386,0,0" VerticalAlignment="Top" Height="24" Width="133"/>
 
     </Grid>
 </Window>
