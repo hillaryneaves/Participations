@@ -1,0 +1,17 @@
+﻿<Window x:Class="PokeRedo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PokeRedo"
+        mc:Ignorable="d"
+        Title="Pokemon Redo for Exam Prep" Height="450" Width="800">
+    <Grid Background="Gray">
+        <ListBox x:Name="lstPokemons" Margin="0,0,557,0" SelectionChanged="lstPokemons_SelectionChanged"/>
+        <Image x:Name="imgPoke" HorizontalAlignment="Left" Height="174" Margin="431,133,0,0" VerticalAlignment="Top" Width="192"/>
+        <Button x:Name="btnSwitch" Content="Switch" HorizontalAlignment="Left" Margin="477,354,0,0" VerticalAlignment="Top" Height="34" Width="106" Click="btnSwitch_Click"/>
+        <Label x:Name="lblWeight" Content="Weight:" HorizontalAlignment="Left" Margin="619,319,0,0" VerticalAlignment="Top" Height="30" Width="115"/>
+        <Label x:Name="lblHeight" Content="Height:" HorizontalAlignment="Left" Margin="357,319,0,0" VerticalAlignment="Top" Height="30" Width="118"/>
+
+    </Grid>
+</Window>
