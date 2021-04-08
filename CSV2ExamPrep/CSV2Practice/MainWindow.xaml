@@ -9,7 +9,7 @@
     <Grid Background="#FFC988E1">
         <ListBox x:Name="lstTaylor" Margin="42,127,566,127"/>
         <ListBox x:Name="lstKim" Margin="295,127,327,127"/>
-        <ComboBox x:Name="cmbOptions" HorizontalAlignment="Left" Margin="270,359,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbOptions" HorizontalAlignment="Left" Margin="270,359,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbOptions_SelectionChanged"/>
         <Button x:Name="btnGenerate" Content="Button" HorizontalAlignment="Left" Margin="82,347,0,0" VerticalAlignment="Top" Click="btnGenerate_Click"/>
 
     </Grid>

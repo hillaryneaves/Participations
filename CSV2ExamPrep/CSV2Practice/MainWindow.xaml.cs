@@ -50,6 +50,8 @@ namespace CSV2Practice
                     starData.Kim = Convert.ToInt32(pieces[2]);
 
                     dataSet.Add(starData);
+
+                    PopulateComboBox();
                 }
 
                 List<int> Taylor = new List<int>();
@@ -70,16 +72,36 @@ namespace CSV2Practice
                 var kimSum = Kim.Sum();
                 lstKim.Items.Add(kimSum);
 
-                List<int> Combo = new List<int>();
-                foreach (var item in dataSet)
-                {
-                    cmbOptions.Items.Add(item.Taylor);
-                    cmbOptions.Items.Add(item.Kim);
-                }
+                //List<int> Combo = new List<int>();
+                //foreach (var item in dataSet)
+                //{
+                //    cmbOptions.Items.Add(item.Taylor);
+                //    cmbOptions.Items.Add(item.Kim);
+                //}
 
                 //var comboAnswers = Combo(d);
                 //cmbOptions.Items.Add(Combo);
             }
+        }
+
+        private void PopulateComboBox()
+        {
+            cmbOptions.Items.Add("Taylor");
+            cmbOptions.Items.Add("Kim");
+            cmbOptions.SelectedIndex = 0;
+
+            foreach (var item in dataSet)
+            {
+                if (!cmbOptions.Items.Contains(item.Taylor))
+                {
+                    cmbOptions.Items.Add(item.Taylor);
+                }
+            }
+        }
+
+        private void cmbOptions_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
