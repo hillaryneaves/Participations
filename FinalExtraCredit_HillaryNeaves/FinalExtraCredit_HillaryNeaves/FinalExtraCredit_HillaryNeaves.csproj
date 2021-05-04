@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="htmlcss.png" />
+    <None Remove="json.png" />
+    <None Remove="MVC.jpg" />
+    <None Remove="speedadoodle.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="htmlcss.png" />
+    <Resource Include="json.png" />
+    <Resource Include="MVC.jpg" />
+    <Resource Include="speedadoodle.jpg" />
+  </ItemGroup>
+
+</Project>
