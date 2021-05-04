@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONRedoExamPrep", "JSONRedoExamPrep\JSONRedoExamPrep.csproj", "{D1C0A287-BF52-407E-867E-C637FD32CC99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1C0A287-BF52-407E-867E-C637FD32CC99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C0A287-BF52-407E-867E-C637FD32CC99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C0A287-BF52-407E-867E-C637FD32CC99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C0A287-BF52-407E-867E-C637FD32CC99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2E53804-1671-4060-B7C4-872AF38F8CDC}
+	EndGlobalSection
+EndGlobal

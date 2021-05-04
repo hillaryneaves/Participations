@@ -1,0 +1,44 @@
+﻿@model IEnumerable<MVC_EF_Intro.Models.FootballSchedule>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Football Schedule</h2>
+
+
+
+@foreach (var item in Model) {
+    
+    <div style="background-color:red; color:white;">
+        <h3>@item.Season</h3>
+        @if (item.IsHomeGame == true)
+        {
+            <p>OU vs. @item.Opponent</p>
+        }
+        else
+        {
+            <p> OU @@ @item.Opponent</p>
+        }
+    </div>
+
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Season)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Opponent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsHomeGame)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}

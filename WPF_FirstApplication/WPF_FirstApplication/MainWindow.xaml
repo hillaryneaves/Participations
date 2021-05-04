@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPF_FirstApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_FirstApplication"
+        mc:Ignorable="d"
+        Title="My first WPF Application" Height="450" Width="800">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFDE19AD"/>
+            <GradientStop Color="#FFF8DCF6" Offset="0.823"/>
+            <GradientStop Color="#FFF29FDE" Offset="0.507"/>
+            <GradientStop Color="#FFEEA1DA" Offset="0.2"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Label x:Name="lblTitle" Content="My First WPF Application!" HorizontalAlignment="Left" Margin="83,10,0,0" VerticalAlignment="Top" Height="96" Width="690" FontSize="48" Foreground="#FFF01414"/>
+        <Button x:Name="btnSubmit" Content="Click Me Please" HorizontalAlignment="Left" Margin="418,300,0,0" VerticalAlignment="Top" Height="53" Width="237" Click="btnSubmit_Click" IsDefault="True"/>
+        <Label x:Name="lblMessage" Content="Hello World!" HorizontalAlignment="Left" Margin="123,165,0,0" VerticalAlignment="Top" Foreground="#FFED2424" Width="154" FontSize="20"/>
+        <Label Content="Favorite Number" HorizontalAlignment="Left" Margin="46,217,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFDE1C1C"/>
+        <TextBox x:Name="txtFavoriteNumber" HorizontalAlignment="Left" Margin="221,231,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblOutput" Content="" HorizontalAlignment="Left" Margin="103,353,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnDontClick" Content="Don't Click Me" HorizontalAlignment="Left" Margin="159,326,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>

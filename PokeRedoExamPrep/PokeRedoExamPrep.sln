@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokeRedo", "PokeRedo\PokeRedo.csproj", "{2A7D7D7F-1E4B-4C4F-A354-0ACC65BD3607}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A7D7D7F-1E4B-4C4F-A354-0ACC65BD3607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A7D7D7F-1E4B-4C4F-A354-0ACC65BD3607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A7D7D7F-1E4B-4C4F-A354-0ACC65BD3607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A7D7D7F-1E4B-4C4F-A354-0ACC65BD3607}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2BED7C1-F8B1-489F-9ACD-89B4F7E9AC2E}
+	EndGlobalSection
+EndGlobal

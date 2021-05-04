@@ -1,0 +1,25 @@
+﻿<Window x:Class="RedoHW3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RedoHW3"
+        mc:Ignorable="d"
+        Title="HW Redo - Exam Prep" Height="450" Width="800">
+    <Grid Background="#FFF6CEF3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="19*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblMainLabel" Content="TV SHOW DATA" Grid.Column="1" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Bodoni MT Black" FontSize="48"/>
+        <Label x:Name="lblRating" Content="Rating:" Grid.Column="1" HorizontalAlignment="Left" Margin="6,105,0,0" VerticalAlignment="Top" FontFamily="Bodoni MT Black" FontSize="14"/>
+        <Label x:Name="lblCountry" Content="Country:" Grid.Column="1" HorizontalAlignment="Left" Margin="275,105,0,0" VerticalAlignment="Top" FontFamily="Bodoni MT Black" FontSize="14"/>
+        <Label x:Name="lblLanguage" Content="Language:" Grid.Column="1" HorizontalAlignment="Left" Margin="539,104,0,0" VerticalAlignment="Top" FontFamily="Bodoni MT Black" FontSize="14"/>
+        <ListBox x:Name="lstMainList" Grid.ColumnSpan="2" Margin="0,193,0,0" Background="#FFFCE8FA" SelectionChanged="lstMainList_SelectionChanged"/>
+        <ComboBox x:Name="cmbRating" Grid.Column="1" HorizontalAlignment="Left" Margin="74,109,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbRating_SelectionChanged"/>
+        <ComboBox x:Name="cmbCountry" Grid.Column="1" HorizontalAlignment="Left" Margin="352,110,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbCountry_SelectionChanged"/>
+        <ComboBox x:Name="cmbLanguage" Grid.Column="1" HorizontalAlignment="Left" Margin="626,108,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbLanguage_SelectionChanged"/>
+        <Button x:Name="btnReset" Content="Reset" Grid.Column="1" HorizontalAlignment="Center" Margin="0,152,0,0" VerticalAlignment="Top" Height="21" Width="321" FontSize="14" Click="btnReset_Click"/>
+
+    </Grid>
+</Window>

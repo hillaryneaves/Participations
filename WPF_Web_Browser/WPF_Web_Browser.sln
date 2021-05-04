@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Web_Browser", "WPF_Web_Browser\WPF_Web_Browser.csproj", "{3C29F734-0CD0-4192-BEDA-4EF7D5D8F88B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C29F734-0CD0-4192-BEDA-4EF7D5D8F88B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C29F734-0CD0-4192-BEDA-4EF7D5D8F88B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C29F734-0CD0-4192-BEDA-4EF7D5D8F88B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C29F734-0CD0-4192-BEDA-4EF7D5D8F88B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6ACF9DE7-91ED-46E2-BC69-7C18300BF88D}
+	EndGlobalSection
+EndGlobal
