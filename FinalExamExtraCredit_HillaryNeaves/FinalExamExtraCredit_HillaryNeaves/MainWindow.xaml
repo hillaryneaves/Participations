@@ -1,0 +1,48 @@
+﻿<Window x:Class="FinalExamExtraCredit_HillaryNeaves.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalExamExtraCredit_HillaryNeaves"
+        mc:Ignorable="d"
+        Title="Extra Credit - Hillary Neaves" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Introduction">
+                <Grid x:Name="tabIntro" Background="#FFD3EEF3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="372*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="lblIntro" Content="WHAT I'VE LEARNED" Grid.Column="1" HorizontalAlignment="Left" Margin="79,10,0,0" VerticalAlignment="Top" FontFamily="Britannic Bold" FontSize="65"/>
+                    <Label x:Name="lblQuestion" Content="Want to see what I've learned this semester?" Grid.Column="1" HorizontalAlignment="Left" Margin="183,92,0,0" VerticalAlignment="Top" FontFamily="Britannic Bold" FontSize="18"/>
+                    <Label x:Name="lblDirections" Content="Click the &quot;Yes&quot; or &quot;No&quot; button and then follow the directions!" Grid.Column="1" HorizontalAlignment="Left" Margin="119,122,0,0" VerticalAlignment="Top" FontFamily="Britannic Bold" FontSize="18"/>
+                    <Label x:Name="lblName" Content="Hillary Neaves" Grid.Column="1" HorizontalAlignment="Left" Margin="646,10,0,0" VerticalAlignment="Top" FontFamily="Britannic Bold"/>
+                    <Label x:Name="lblGlance" Content="At a glance I've learned: WPF, JSON, HTML/CSS, MVC, and Sheepadoodles!" Grid.Column="1" HorizontalAlignment="Center" Margin="0,355,0,0" VerticalAlignment="Top" FontFamily="Britannic Bold" FontSize="18"/>
+                    <Button x:Name="btnYes" Content="Yes Yes Yes!!" Grid.Column="1" HorizontalAlignment="Center" Margin="0,157,0,0" VerticalAlignment="Top" FontFamily="Britannic Bold" FontSize="18" Width="350" Click="btnYes_Click" MouseEnter="btnYes_MouseEnter" MouseLeave="btnYes_MouseLeave"/>
+                    <Button x:Name="btnNo" Content="No, I don't care what you've learned." Grid.Column="1" HorizontalAlignment="Center" Margin="0,194,0,0" VerticalAlignment="Top" FontFamily="Britannic Bold" FontSize="18" Width="349" Click="btnNo_Click" MouseEnter="btnNo_MouseEnter" MouseLeave="btnNo_MouseLeave"/>
+                    <Image x:Name="imgWPF" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="100" Margin="25,238,0,0" VerticalAlignment="Top" Width="100" Source="/wpf.png"/>
+                    <Image x:Name="imgJSON" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="119,238,0,0" VerticalAlignment="Top" Width="100" Source="/json.png"/>
+                    <Image x:Name="imgHTMLCSS" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="301,238,0,0" VerticalAlignment="Top" Width="100" Source="/htmlcss.png"/>
+                    <Image x:Name="imgMVC" Grid.Column="1" HorizontalAlignment="Left" Height="96" Margin="460,257,0,0" VerticalAlignment="Top" Width="100" Source="/MVC.jpg"/>
+                    <Image x:Name="imgDog" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="621,238,0,0" VerticalAlignment="Top" Width="100" Source="/speedadoodle.jpg"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabProblem" Header="Practice Problem">
+                <Grid Background="#FFD3EEF3">
+                    <Label x:Name="lblProblemLabel" Content="COVID-19 Information per State" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Britannic Bold" FontSize="48"/>
+                    <Label x:Name="lblCOVIDQ" Content="Use the dropdown arrow below to select the state that you would like to see COVID-19 data from." HorizontalAlignment="Left" Margin="31,63,0,0" VerticalAlignment="Top" FontFamily="Britannic Bold" FontSize="17" Width="747"/>
+                    <Label x:Name="lblState" Content="Select a State:" HorizontalAlignment="Left" Margin="183,131,0,0" VerticalAlignment="Top" FontFamily="Britannic Bold" FontSize="18"/>
+                    <ComboBox x:Name="cmbState" HorizontalAlignment="Left" Margin="311,136,0,0" VerticalAlignment="Top" Width="150" SelectionChanged="cmbState_SelectionChanged"/>
+                    <ListBox x:Name="lstList" Margin="488,113,27,210" Background="#FF99DAF0" />
+                    <Label x:Name="lblResults" Content="*Results will be to the left*" HorizontalAlignment="Left" Margin="219,166,0,0" VerticalAlignment="Top" FontFamily="Britannic Bold" FontSize="18"/>
+                    <Image x:Name="imgThree" HorizontalAlignment="Left" Height="176" Margin="116,220,0,0" VerticalAlignment="Top" Width="606" Source="/masks.png"/>
+                    <Label x:Name="lblCases" Content="Number of Cases:" HorizontalAlignment="Left" Margin="553,83,0,0" VerticalAlignment="Top" FontFamily="Britannic Bold" FontSize="18"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
+    
+    

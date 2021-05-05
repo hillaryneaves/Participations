@@ -1,0 +1,21 @@
+﻿@model IEnumerable<MVCEF_Participation.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Students</h2>
+
+<div>
+    @foreach (var item in Model)
+    {
+        <a href="~/Students/Details/@item.StudentID">
+            <div class="card" style="float: left; width: 50%">
+                <h3>@item.FirstName @item.LastName</h3>
+            </div>
+        </a>
+
+
+    }
+
+</div>

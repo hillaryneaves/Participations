@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="covid.jpg" />
+    <None Remove="htmlcss.png" />
+    <None Remove="json.png" />
+    <None Remove="lysol.jpg" />
+    <None Remove="masks.png" />
+    <None Remove="MVC.jpg" />
+    <None Remove="newMVC.jpg" />
+    <None Remove="speedadoodle.jpg" />
+    <None Remove="wpf.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="covid.jpg" />
+    <Resource Include="htmlcss.png" />
+    <Resource Include="json.png" />
+    <Resource Include="lysol.jpg" />
+    <Resource Include="masks.png" />
+    <Resource Include="MVC.jpg" />
+    <Resource Include="newMVC.jpg" />
+    <Resource Include="speedadoodle.jpg" />
+    <Resource Include="wpf.png" />
+  </ItemGroup>
+
+</Project>
